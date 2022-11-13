@@ -1,0 +1,16 @@
+/* колір фону           #FFFFFF */
+
+
+/* вторинний колір фону #F5F5F5 */
+
+
+/* колір заголовків     #212121 */
+
+body {
+    background-color: #FFFFFF;
+    font-family: roboto;
+}
+
+ul {
+    list-style: none;
+}
