@@ -1,16 +1,76 @@
-/* колір фону           #FFFFFF */
+/* 
+    header color                 #212121 
+    text color                   #757575 
 
+    main background color        #FFFFFF 
+    secondary background color   #F5F5F5 
 
-/* вторинний колір фону #F5F5F5 */
+    accent color                 #2196F3 
+*/
 
-
-/* колір заголовків     #212121 */
+:root {
+    --header-color: #212121;
+    --text-color: #757575;
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #F5F5F5;
+    --accent-color: #2196F3;
+}
 
 body {
-    background-color: #FFFFFF;
+    background-color: var( --main-background-color);
+    color: var(--text-color);
     font-family: roboto;
 }
 
 ul {
     list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+/* Header styling */
+
+.logo {
+    color: #000000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+
+.menu-nav a {
+    color: var(--header-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.menu-nav .active,
+.menu-nav a:hover,
+.menu-nav a:focus {
+    color: var(--accent-color);
+}
+
+.connect a {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.connect a:hover,
+.connect a:focus {
+    color: var(--accent-color);
 }
