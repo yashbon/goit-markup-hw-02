@@ -5,7 +5,8 @@
     main background color               #FFFFFF 
     secondary background color          #F5F5F5
 
-    accent color                        #2196F3 
+    accent color                        #2196F3
+    white color                         #FFFFFF 
 
     background order service footer     #2F303A
 */
@@ -16,6 +17,7 @@
     --main-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --accent-color: #2196F3;
+    --white-color: #FFFFFF;
     --background-order-service-footer: #2F303A;
 }
 
@@ -89,7 +91,7 @@ ul {
 }
 
 .main-title {
-    color: #FFFFFF;
+    color: var(--white-color);
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -101,7 +103,7 @@ ul {
 
 .order-btn {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--white-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -157,7 +159,7 @@ ul {
 }
 
 .employee-card {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
 }
 
 .employee-title {
@@ -184,11 +186,11 @@ footer {
 }
 
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .postal-address {
-    color: #FFFFFF;
+    color: var(--white-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -224,7 +226,7 @@ footer {
 .filter-btn.active,
 .filter-btn:hover,
 .filter-btn:focus {
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
 
