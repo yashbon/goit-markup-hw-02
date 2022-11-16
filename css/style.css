@@ -1,25 +1,28 @@
 /* 
-    header color                 #212121 
-    text color                   #757575 
+    header color                        #212121 
+    text color                          #757575 
 
-    main background color        #FFFFFF 
-    secondary background color   #F5F5F5 
+    main background color               #FFFFFF 
+    secondary background color          #F5F5F5
 
-    accent color                 #2196F3 
+    accent color                        #2196F3 
+
+    background order service footer     #2F303A
 */
 
 :root {
-    --header-color: #212121;
+    --title-color: #212121;
     --text-color: #757575;
     --main-background-color: #FFFFFF;
-    --secondary-background-color: #F5F5F5;
+    --secondary-background-color: #F5F4FA;
     --accent-color: #2196F3;
+    --background-order-service-footer: #2F303A;
 }
 
 body {
     background-color: var( --main-background-color);
     color: var(--text-color);
-    font-family: roboto;
+    font-family: "roboto";
 }
 
 ul {
@@ -31,7 +34,10 @@ ul {
 }
 
 
-/* Header styling */
+/* STUDIO STYLES */
+
+
+/* Header styles */
 
 .logo {
     color: #000000;
@@ -47,7 +53,7 @@ ul {
 }
 
 .menu-nav a {
-    color: var(--header-color);
+    color: var(--title-color);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -73,4 +79,170 @@ ul {
 .connect a:hover,
 .connect a:focus {
     color: var(--accent-color);
+}
+
+
+/* Order a order-service */
+
+.order-service {
+    background-color: var(--background-order-service-footer);
+}
+
+.main-title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+
+/* Features styles */
+
+.feature-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+
+/* Services styles*/
+
+.services-title,
+.team-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* Team styles */
+
+.team-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employee-card {
+    background-color: #FFFFFF;
+}
+
+.employee-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+.employee-description {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: var(--background-order-service-footer)
+}
+
+.logo-footer {
+    color: #FFFFFF;
+}
+
+.postal-address {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* PORTFOLION STILES */
+
+
+/* Buttons styles */
+
+.filter-btn {
+    color: var(--title-color);
+    background-color: var(--secondary-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+
+/* Galery projects styles */
+
+.project-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.project-description {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
 }
