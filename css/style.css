@@ -223,7 +223,6 @@ footer {
     cursor: pointer;
 }
 
-.filter-btn.active,
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--white-color);
