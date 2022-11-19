@@ -4,6 +4,7 @@
 
     main background color               #FFFFFF 
     secondary background color          #F5F5F5
+    order button active color           #188CE8
 
     accent color                        #2196F3
     white color                         #FFFFFF 
@@ -19,6 +20,7 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --background-order-service-footer: #2F303A;
+    --order-btn-actice: #188CE8;
 }
 
 body {
@@ -47,7 +49,7 @@ ul {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
 }
 
 .logo-first {
@@ -58,7 +60,7 @@ ul {
     color: var(--title-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -72,7 +74,7 @@ ul {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -92,7 +94,7 @@ ul {
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -104,10 +106,14 @@ ul {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+}
+
+.order-btn:hover {
+    background: var(--order-btn-actice);
 }
 
 
@@ -117,14 +123,14 @@ ul {
     color: var(--title-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
 .feature-description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 
 
@@ -135,7 +141,7 @@ ul {
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.14;
     text-align: center;
 }
 
@@ -146,7 +152,7 @@ ul {
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.14;
     text-align: center;
 }
 
@@ -158,13 +164,13 @@ ul {
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
 }
 
 .employee-description {
     color: var(--text-color);
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
 }
 
 
@@ -182,13 +188,13 @@ footer {
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 
 .contact {
     font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 0.58;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -208,9 +214,10 @@ footer {
 .filter-btn {
     color: var(--title-color);
     background-color: var(--secondary-background-color);
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     cursor: pointer;
 }
 
@@ -227,12 +234,25 @@ footer {
     color: var(--title-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .project-description {
     color: var(--text-color);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
