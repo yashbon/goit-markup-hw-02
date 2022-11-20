@@ -7,9 +7,11 @@
     order button active color           #188CE8
 
     accent color                        #2196F3
-    white color                         #FFFFFF 
+    white color                         #FFFFFF
+    black color                         #000000 
 
     background order service footer     #2F303A
+    text color contact footer           rgba(255, 255, 255, 0.6)
 */
 
 :root {
@@ -19,7 +21,9 @@
     --secondary-background-color: #F5F4FA;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
+    --black-color: #000000;
     --background-order-service-footer: #2F303A;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
     --order-btn-actice: #188CE8;
 }
 
@@ -45,7 +49,7 @@ ul {
 /* Header styles */
 
 .logo {
-    color: #000000;
+    color: var(--black-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -56,7 +60,7 @@ ul {
     color: var(--accent-color);
 }
 
-.menu-nav a {
+.nav-menu-link {
     color: var(--title-color);
     font-weight: 500;
     font-size: 14px;
@@ -70,7 +74,7 @@ ul {
     color: var(--accent-color);
 }
 
-.connect a {
+.contacts-link {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -78,8 +82,8 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.connect a:hover,
-.connect a:focus {
+.contacts a:hover,
+.contacts a:focus {
     color: var(--accent-color);
 }
 
@@ -112,7 +116,8 @@ ul {
     cursor: pointer;
 }
 
-.order-btn:hover {
+.order-btn:hover,
+.order-btn:focus {
     background: var(--order-btn-actice);
 }
 
@@ -128,7 +133,6 @@ ul {
 }
 
 .feature-description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -147,6 +151,10 @@ ul {
 
 
 /* Team styles */
+
+.team {
+    background-color: var(--secondary-background-color);
+}
 
 .team-title {
     color: var(--title-color);
@@ -188,20 +196,20 @@ footer {
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
 }
 
-.contact {
+.footer-contact {
+    color: var(--footer-contact-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 0.58;
-    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
 }
 
 .postal-address:hover,
 .postal-address:focus,
-.contact:hover,
-.contact:focus {
+.footer-contact:hover,
+.footer-contact:focus {
     color: var(--accent-color);
 }
 
@@ -214,7 +222,7 @@ footer {
 .filter-btn {
     color: var(--title-color);
     background-color: var(--secondary-background-color);
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
